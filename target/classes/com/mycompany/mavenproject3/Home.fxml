@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="1010.0" style="-fx-background-color: #00041d;;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane onMouseClicked="#switchToSecondary" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: yellow; -fx-border-radius: 10;">
+               <center>
+                  <ImageView fitHeight="88.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@images/video_50px.png" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Vidéo" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </bottom>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: yellow; -fx-border-radius: 10;">
+               <center>
+                  <ImageView fitHeight="88.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@images/image_50px.png" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Images" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </bottom>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: yellow; -fx-border-radius: 10;">
+               <center>
+                  <ImageView fitHeight="78.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@images/music_50px.png" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Musique" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </bottom>
+            </BorderPane>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <HBox alignment="CENTER" prefHeight="233.0" prefWidth="1010.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="LFM mutimpédia" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="38.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
